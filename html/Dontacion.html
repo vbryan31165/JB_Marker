@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+<br><br><br>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 bg-info">
+        <div class="row my-3">
+            <div class="col-lg"></div>
+            <div class="col-lg">
+                <i>DONATION BY MiDog</i>            
+            </div>
+            <div class="col-lg"></div>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+    
+</div>
+<form name="i" action="">
+    <div class="row">
+        <div class="col-lg-3 bg-info"></div>
+        <div class="col-lg-6 bg-primary">
+            <div class="row mt-5">
+                <strong>Datos:</strong>
+                <div class="col-lg-6 bg-primary">
+                    <input type="text" id="idUser" class="form-control mt-2" placeholder="Usuario *">
+                    <input type="text" id="idNum" class="form-control mt-2" pattern="[0-9]{12}" placeholder="Celular *" >
+                </div>
+                <div class="col-lg-6 bg-primary">
+                    <input type="email" id="idEmail" class="form-control mt-2" placeholder="Correo" >
+                    <input type="text" id="idPais" class="form-control mt-2" value="colombia" placeholder="Pais *">
+                </div>                    
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg">
+                    <strong >Cantidad a donar:</strong>
+                </div>
+                <div class="col-lg"><input type="text"  class="form-control" id="IdDonar" value="5000" placeholder="$ *"></div>
+            </div>
+            <br><br>
+        </div>
+        <div class="col-lg-3 bg-info" ></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 bg-info">
+            <div class="row my-3">
+                <div class="col-lg"></div>
+                <div class="col-lg">
+                    <button type="button" id="Btn" class="btn btn-primary"  onclick="pagar()">Enviar</button> 
+                    <input type="reset" class="btn btn-warning" value="Limpiar">
+                
+                </div>
+                <div class="col-lg"></div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+        
+    </div>
+</form>
+        <br>
+
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 text-success">
+                <div class=" text-center">
+                    <p id="idRes" ></p>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+
+
+<br><br><br>
+</body>
+<script src="../js/proceso.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
